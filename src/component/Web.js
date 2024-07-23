@@ -1,21 +1,31 @@
 import React, { useState } from 'react';
+import car from "./car.json";
+import Lottie from "lottie-react"
+import run from "./run.json"
+import contact from "./contact.json"
+import carab from "./carab.json"
 const clicked=()=>
 {
 alert('Successfully Ordered')
 }
 function Home() {
   return (
-    <div style={{ backgroundColor:'black',color:"white",height:700}}>
-      <img  style={{height:"50%",width:"40%"}} src="https://images.pexels.com/photos/9796261/pexels-photo-9796261.jpeg?auto=compress&cs=tinysrgb&w=600"/>
-     <b><i> <h1>BENNS LUXURY RIDE</h1></i></b>
-      <h3>SIMPLE & SECURE WAY TO BUY A CAR</h3>
-      <h4>
-        Ready to Order your first car
-      </h4>
-      <br/>
-      <button type="button" onClick={clicked} className="btn btn-secondary mx-8" style={{height:50,width:250,borderRadius:10}}>Order Now</button>
+   <div style={{backgroundColor:"black",display:"flex"}}>
+    <div  style={{height:500,marginTop:100}} >
+      <Lottie style= {{height:550,width:700,marginTop:20,marginLeft:50,backgroundColor:"white"}} animationData={run} loop={true}/>
+      </div>
+      
+      <h1 style={{color:"white",marginTop:150,marginLeft:100}}>
+        DRIVE YOUR DREAMS
 
+      <br/>
+      
+      Discover the Maruti Experience
+At Maruti, we blend innovation with reliability to create vehicles that redefine your driving experience. Embrace the journey with unmatched performance and exceptional comfort.
+
+</h1>
     </div>
+    
   );
 }
 
@@ -55,11 +65,14 @@ function Home() {
             <b>If you have specific questions about Maruti Suzuki or need detailed information about a particular model or aspect of the company, feel free to ask!</b>
           </footer>
         </div>
-        <div style={{ marginLeft: 20,height:350,width:800 }}>
-          <img src="https://imgs.search.brave.com/jt5xveIpRZRFeZGYKfSqMJSvnWAtGmwqgXredyfYSEc/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Y25ldC5jb20vYS9p/bWcvcmVzaXplLzg3/MjAxMWYyNjYxZGYy/OTE2ZjNlZmExMDA4/Y2RiNzVjNDlhNGE1/OTUvaHViLzIwMTYv/MTIvMTQvOGVhNDFk/OWQtMmE3Ni00ZjM1/LTlkOWQtMWVmNDcy/ZjdkOWRjL2Nhci1w/aG90b2dyYXBoeS1o/b3ctdG8uanBnP2F1/dG89d2VicCZmaXQ9/Y3JvcCZoZWlnaHQ9/Njc1JndpZHRoPTEy/MDA" alt="Maruti Car" style={{ height: '100%', width: '100%', objectFit: 'cover' }} />
+        <div >
+          <br/>
+          <br/>
+          
+         <Lottie animationData={carab} loop={true} style={{height:450,width:800}}/>
         
         
-          <img  style={{width:800,height:500}} src="https://imgs.search.brave.com/W2PTPXjlHgZLUkBdhRazrs7pyqFXaTiMLTFjffk6fpU/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJhY2Nlc3Mu/Y29tL2Z1bGwvMzMx/MzguanBn" />
+          <img  style={{width:700,height:400}} src="https://imgs.search.brave.com/W2PTPXjlHgZLUkBdhRazrs7pyqFXaTiMLTFjffk6fpU/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJhY2Nlc3Mu/Y29tL2Z1bGwvMzMx/MzguanBn" />
        </div>
       </div>
     );
@@ -84,8 +97,8 @@ function Contact() {
         <button type="button" className="btn btn-success" style={{height:50,width:250,borderRadius:20}} onClick={handle}>Submit</button>
       </div>
       <div style={{dispaly:"flex",marginLeft:10,float:"right"}}>
-        <img style={{height:350,width:600,marginLeft:10}} src="https://images.unsplash.com/photo-1511994477422-b69e44bd4ea9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTV8fHxlbnwwfHx8fHw%3D"/>
-        <img style={{height:350,width:600,marginLeft:10}} src="https://imgs.search.brave.com/jt5xveIpRZRFeZGYKfSqMJSvnWAtGmwqgXredyfYSEc/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Y25ldC5jb20vYS9p/bWcvcmVzaXplLzg3/MjAxMWYyNjYxZGYy/OTE2ZjNlZmExMDA4/Y2RiNzVjNDlhNGE1/OTUvaHViLzIwMTYv/MTIvMTQvOGVhNDFk/OWQtMmE3Ni00ZjM1/LTlkOWQtMWVmNDcy/ZjdkOWRjL2Nhci1w/aG90b2dyYXBoeS1o/b3ctdG8uanBnP2F1/dG89d2VicCZmaXQ9/Y3JvcCZoZWlnaHQ9/Njc1JndpZHRoPTEy/MDA"/>
+       <Lottie animationData={contact} loop={true} style={{height:500}}/>
+       
       </div>
     </div>
   );
