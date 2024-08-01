@@ -50,7 +50,7 @@ export default function About() {
           Sustainability: The company is increasingly focusing on sustainability, including energy-efficient manufacturing processes and exploring alternative fuel options.
         </p>
         <footer style={{ color: "white" }}>
-          <b>If you have specific questions about Maruti Suzuki or need detailed information about a particular model or aspect of the company, feel free to ask!</b>
+          <b>**If you have specific questions about Maruti Suzuki or need detailed information about a particular model or aspect of the company, feel free to ask!</b>
         </footer>
       </div>
       <div>
