@@ -4,8 +4,9 @@ import Nav from './component/Nav.js';
 import About from './component/About';
 import Home from './component/Home.js';
 import Sign from './component/Sign.js';
+import Financing from "./component/Financing.js"
 import Collections from './component/Collections.js'
-import Contat from './component/Contat'; // Assuming you have a Contact component
+// Assuming you have a Contact component
 import './App.css';
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/contat" element={<Contat />} />
+          <Route path="/financing" element={<Financing/>} />
           <Route path="/Sign" element={<Sign/>}/>
           <Route path="/collections" element={<Collections/>}/>
 

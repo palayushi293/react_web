@@ -4,7 +4,7 @@ import "./Collections.css"
 export default function Collections() {
 
   return (
-    <div className="0 row" style={{marginLeft:40}}>
+    <div className="0 row" style={{marginLeft:40,backgroundColor:"black",marginTop:5}}>
     
         <div className="card mx-4 my-3 " style={{width:"18rem" ,height:"27rem"}} >
         

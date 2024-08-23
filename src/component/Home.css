@@ -1,0 +1,19 @@
+
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.back{
+    animation: changeBackground 10s infinite;
+}
+@keyframes changeBackground {
+    0% { background-image:url('./family_car.jpeg'); }  /* Starting color */
+    50% { background-image:url('./family_car1.jpeg'); } /* Middle color */
+    100% { background-image:url('./man.webp'); } /* Ending color */
+}

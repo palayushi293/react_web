@@ -14,7 +14,7 @@ const handle = () => {
   return (
     <div>
 
-    <div style={{ display: 'flex', alignItems: 'flex-start', padding: 20 ,backgroundColor:"black"}}>
+    <div style={{ display: 'flex', alignItems: 'flex-start', padding: 20 ,backgroundColor:"yellow"}}>
       <div style={{backgroundColor:"brown",height:540,width:550,  padding: 0 ,borderColor:"white",marginLeft:100,marginTop:50}}>
         <br/>
         <b><i><h1 style={{color:"white"}}>Contact Us</h1></i></b>
