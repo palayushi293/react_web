@@ -5,7 +5,7 @@ import carab from "./carab.json";
 export default function About() {
   useEffect(() => {
     document.title = "Maruti About";
-  }, []);
+  }, 20);
 
   const defaultOptions = {
     loop: true,

@@ -1,7 +1,11 @@
-import React  from 'react'
+import React,{useEffect}  from 'react'
 import "./Collections.css"
 
 export default function Collections() {
+
+  useEffect(() => {
+    document.title = 'Maruti Collections';
+  }, []);
 
   return (
     <div className="0 row" style={{marginLeft:40,backgroundColor:"black",marginTop:5}}>

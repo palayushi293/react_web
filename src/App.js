@@ -56,7 +56,13 @@ function App() {
 
 
           <Route path="/about" element={<About />} />
-          <Route path="/financing" element={<Financing/>} />
+          <Route path="/financing" element={<Financing
+          
+          fin1="Get pre-approved in minutes so you can shop for your next car with peace of mind"
+          terms="Your experience does not end when you get the keys . At Maruti , we give you peace of
+          
+          
+            mind every step of the way"/>} />
           <Route path="/Sign" element={<Sign/>}/>
           <Route path="/collections" element={<Collections/>}/>
 

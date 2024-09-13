@@ -1,9 +1,13 @@
-import React from 'react'
+import React ,{useEffect} from 'react'
 import Lottie from 'lottie-react'
 import finan from "./finan.json"
 
 import newfinance from './newfinance.json'
-export default function Financing() {
+export default function Financing(props) {
+
+  useEffect(() => {
+    document.title = "Maruti Financing"
+  }, 2000);
   return (
     <div>
 
@@ -15,7 +19,7 @@ export default function Financing() {
         <div style={{backgroundColor:"#0047ab",color:"white",marginTop:120}}>
           <br></br>
             <h2 style={{fontFamily:"cursive"}}>Custom financing =Confident Shopping</h2>
-            <h5 style={{fontFamily:"cursive"}}>Get pre-approved in minutes so you can shop for your next car with peace of mind</h5>
+            <h5 style={{fontFamily:"cursive"}}>{props.fin1}</h5>
             <div style={{display:"flex"}}>
              
             <div>
@@ -33,10 +37,7 @@ export default function Financing() {
           <h3 style={{color:"blue",fontFamily:"cursive"}}> Skip the dealership and buy with confidence</h3>
           <br/>
           
-          <h4 style={{fontFamily:"cursive"}}> Your experience does not end when you get the keys . At Maruti , we give you peace of
-          
-          
-            mind every step of the way</h4>
+          <h4 style={{fontFamily:"cursive"}}> {props.terms}</h4>
           
         </div>
 
