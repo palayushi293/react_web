@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './styles.css';
 import { useAuth0 } from "@auth0/auth0-react";
 
-export default function Nav() {
+export default function Nav(props) {
   const { loginWithRedirect, logout ,isAuthenticated} = useAuth0();
 
   return (
@@ -34,16 +34,16 @@ export default function Nav() {
 
             <ul className="navbar-nav me-auto mb-2 mb-lg-0" style={{ marginTop: 30, height: 40 }}>
               <li className="nav-item">
-                <b><Link className="nav-link" style={{ fontFamily: 'Roboto' }} to="/">Home</Link></b>
+                <b><Link className="nav-link" style={{ fontFamily: 'Roboto' }} to="/">{props.home}</Link></b>
               </li>
               <li className="nav-item">
-                <b><Link className="nav-link" style={{ fontFamily: 'Roboto' }} to="/about">About</Link></b>
+                <b><Link className="nav-link" style={{ fontFamily: 'Roboto' }} to="/about">{props.about}</Link></b>
               </li>
               <li className="nav-item">
-                <b><Link className="nav-link" style={{ fontFamily: 'Roboto' }} to="/financing">Financing</Link></b>
+                <b><Link className="nav-link" style={{ fontFamily: 'Roboto' }} to="/financing">{props.financing}</Link></b>
               </li>
               <li className="nav-item">
-                <b><Link className="nav-link" style={{ fontFamily: 'Roboto' }} to="/collections">Samples</Link></b>
+                <b><Link className="nav-link" style={{ fontFamily: 'Roboto' }} to="/collections">{props.sample}</Link></b>
               </li>
               <li className="nav-item" style={{ marginLeft: 60, paddingLeft: 640 }}>
                 <div className="input-group">
